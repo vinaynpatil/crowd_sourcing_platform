@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="category"/>
+<input type="button" id="div_ele" name="div_ele" class="div_ele" onclick="clickme()"></input>
+
+
+<script>
+function clickme() {
+		var str=document.getElementById("category").value;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+    
+        }
+        xmlhttp.open("POST", "clickphp.php?q=" + str, true);
+        xmlhttp.send();
+    }
+
+ 
+</script>
+</body>
+</html>
